@@ -1,26 +1,26 @@
-package com.github.srang.leetcode.merge_two_sorted_lists;
+package com.github.srang.leetcode.helper;
 
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
-    ListNode() {
+    public ListNode() {
     }
 
-    ListNode(int[] vals) {
-        ListNode x = new ListNode(vals[vals.length]);
-        for(int i = vals.length-1; i > 0; i--) {
+    public ListNode(int[] vals) {
+        ListNode x = new ListNode(vals[vals.length-1]);
+        for(int i = vals.length-2; i > 0; i--) {
             x = new ListNode(vals[i], x);
         }
         this.val = vals[0];
         this.next = x;
     }
 
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
     }
