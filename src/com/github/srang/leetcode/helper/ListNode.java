@@ -1,17 +1,26 @@
-package com.github.srang.leetcode.add_two_numbers;
+package com.github.srang.leetcode.helper;
 
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
-    ListNode() {
+    public ListNode() {
     }
 
-    ListNode(int val) {
+    public ListNode(int[] vals) {
+        ListNode x = new ListNode(vals[vals.length-1]);
+        for(int i = vals.length-2; i > 0; i--) {
+            x = new ListNode(vals[i], x);
+        }
+        this.val = vals[0];
+        this.next = x;
+    }
+
+    public ListNode(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
     }

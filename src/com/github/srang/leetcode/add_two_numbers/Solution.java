@@ -1,5 +1,7 @@
 package com.github.srang.leetcode.add_two_numbers;
 
+import com.github.srang.leetcode.helper.ListNode;
+
 public class Solution {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry = 0;
