@@ -15,8 +15,7 @@ public class SolutionTest {
 
     @Test
     void testNodePair2() {
-        ListNode test = new ListNode();
-        assertEquals(null, Solution.swapPairs(test));
+        assertEquals(null, Solution.swapPairs(null));
     }
 
     @Test
