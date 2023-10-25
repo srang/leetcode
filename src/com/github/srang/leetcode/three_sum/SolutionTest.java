@@ -37,7 +37,7 @@ class SolutionTest {
 
     @Test
     void testThreeSum6() {
-        assertEquals("[[-3, -3, 6], [-3, 1, 2], [-1, -1, 2], [-1, 0, 1]]",
+        assertEquals("[[-3, -1, 4], [-1, -1, 2], [-3, -3, 6], [-3, 1, 2], [-1, 0, 1]]",
                 Solution.threeSum(new int[]{-1,0,-1,1,2,-1,-3,-3,6,4,2}).toString());
     }
 
