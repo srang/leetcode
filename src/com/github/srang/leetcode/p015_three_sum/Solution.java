@@ -1,7 +1,6 @@
-package com.github.srang.leetcode.three_sum;
+package com.github.srang.leetcode.p015_three_sum;
 
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Solution {

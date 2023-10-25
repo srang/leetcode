@@ -1,4 +1,4 @@
-package com.github.srang.leetcode.add_two_numbers;
+package com.github.srang.leetcode.p001_add_two_numbers;
 
 import com.github.srang.leetcode.helper.ListNode;
 

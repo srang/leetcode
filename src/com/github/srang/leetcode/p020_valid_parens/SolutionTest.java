@@ -1,4 +1,4 @@
-package com.github.srang.leetcode.valid_parens;
+package com.github.srang.leetcode.p020_valid_parens;
 
 import org.junit.jupiter.api.Test;
 
