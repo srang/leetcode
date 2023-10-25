@@ -1,4 +1,4 @@
-package com.github.srang.leetcode.three_sum;
+package com.github.srang.leetcode.p015_three_sum;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package com.github.srang.leetcode.swap_node_pair;
+package com.github.srang.leetcode.p024_swap_node_pair;
 
 import com.github.srang.leetcode.helper.ListNode;
 

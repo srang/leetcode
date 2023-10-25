@@ -1,4 +1,4 @@
-package com.github.srang.leetcode.merge_two_sorted_lists;
+package com.github.srang.leetcode.p021_merge_two_sorted_lists;
 
 import com.github.srang.leetcode.helper.ListNode;
 
