@@ -1,0 +1,32 @@
+table.board {
+  margin:1em auto;
+  boarder: 4px solid;
+}
+td.board-cell {
+  height:90px;
+  width:90px;
+  border: 1px solid;
+  text-align: center;
+}
+td.board-cell:first-child {
+  border-left: 3px solid;
+}
+td.board-cell:nth-child(3n) {
+  border-right: 3px solid;
+}
+tr.board-row:first-child {
+  border-top: 3px solid;
+}
+tr.board-row:nth-child(3n) td {
+  border-bottom: 3px solid;
+}
+
+td.inner-cell {
+  height: 10px;
+  width: 10px;
+  border: none;
+  text-align:center;
+}
+tr.inner-cell-row {
+  boarder: none;
+}

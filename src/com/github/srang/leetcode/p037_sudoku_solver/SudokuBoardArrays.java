@@ -1,8 +1,8 @@
-package com.github.srang.leetcode.helper;
+package com.github.srang.leetcode.p037_sudoku_solver;
 
-public class SodukoBoard {
+public class SudokuBoardArrays {
     private char[][] board;
-    public SodukoBoard(char[][] board) {
+    public SudokuBoardArrays(char[][] board) {
         this.board = board;
     }
 

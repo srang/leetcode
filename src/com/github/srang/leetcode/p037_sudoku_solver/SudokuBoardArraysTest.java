@@ -1,14 +1,14 @@
-package com.github.srang.leetcode.helper;
+package com.github.srang.leetcode.p037_sudoku_solver;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-public class SodukoBoardTest {
+public class SudokuBoardArraysTest {
     @Test
     void testToString() {
-        SodukoBoard board = new SodukoBoard(new char[][]{
+        SudokuBoardArrays board = new SudokuBoardArrays(new char[][]{
                 {'5','3','4','6','7','8','9','1','2'},
                 {'6','7','2','1','9','5','3','4','8'},
                 {'1','9','8','3','4','2','5','6','7'},
@@ -24,7 +24,7 @@ public class SodukoBoardTest {
 
     @Test
     void testCompare() {
-        SodukoBoard board1 = new SodukoBoard(new char[][]{
+        SudokuBoardArrays board1 = new SudokuBoardArrays(new char[][]{
                 {'5','3','4','6','7','8','9','1','2'},
                 {'6','7','2','1','9','5','3','4','8'},
                 {'1','9','8','3','4','2','5','6','7'},
@@ -35,7 +35,7 @@ public class SodukoBoardTest {
                 {'2','8','7','4','1','9','6','3','5'},
                 {'3','4','5','2','8','6','1','7','9'}
         });
-        SodukoBoard board2 = new SodukoBoard(new char[][]{
+        SudokuBoardArrays board2 = new SudokuBoardArrays(new char[][]{
                 {'5','3','4','6','7','8','9','1','2'},
                 {'6','7','2','1','9','5','3','4','8'},
                 {'1','9','8','3','4','2','5','6','7'},
@@ -50,7 +50,7 @@ public class SodukoBoardTest {
     }
     @Test
     void testCompare2() {
-        SodukoBoard board1 = new SodukoBoard(new char[][]{
+        SudokuBoardArrays board1 = new SudokuBoardArrays(new char[][]{
                 {'5','1','4','6','7','8','9','1','2'},
                 {'6','7','2','1','9','5','3','4','8'},
                 {'1','9','8','3','4','2','5','6','7'},
@@ -61,7 +61,7 @@ public class SodukoBoardTest {
                 {'2','8','7','4','1','9','6','3','5'},
                 {'3','4','5','2','8','6','1','7','9'}
         });
-        SodukoBoard board2 = new SodukoBoard(new char[][]{
+        SudokuBoardArrays board2 = new SudokuBoardArrays(new char[][]{
                 {'5','3','4','6','7','8','9','1','2'},
                 {'6','7','2','1','9','5','3','4','8'},
                 {'1','9','8','3','4','2','5','6','7'},

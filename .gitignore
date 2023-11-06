@@ -19,6 +19,8 @@ bin/
 *.iml
 .idea/
 
+index.html
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/

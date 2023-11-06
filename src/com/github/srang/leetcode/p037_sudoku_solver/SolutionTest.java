@@ -1,6 +1,5 @@
 package com.github.srang.leetcode.p037_sudoku_solver;
 
-import com.github.srang.leetcode.helper.SodukoBoard;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -8,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SolutionTest {
     @Test
     void testSimpleElimination() {
-        SodukoBoard input = new SodukoBoard(new char[][]{
+        SudokuBoardArrays input = new SudokuBoardArrays(new char[][]{
                 {'5','3','.','.','7','.','.','.','.'},
                 {'6','.','.','1','9','5','.','.','.'},
                 {'.','9','8','.','.','.','.','6','.'},
@@ -19,7 +18,7 @@ public class SolutionTest {
                 {'.','.','.','4','1','9','.','.','5'},
                 {'.','.','.','.','8','.','.','7','9'}
         });
-        SodukoBoard solution = new SodukoBoard(new char[][]{
+        SudokuBoardArrays solution = new SudokuBoardArrays(new char[][]{
                 {'5','3','4','6','7','8','9','1','2'},
                 {'6','7','2','1','9','5','3','4','8'},
                 {'1','9','8','3','4','2','5','6','7'},
@@ -35,7 +34,7 @@ public class SolutionTest {
     }
     @Test
     void testLastRemainingRow() {
-        SodukoBoard input = new SodukoBoard(new char[][]{
+        SudokuBoardArrays input = new SudokuBoardArrays(new char[][]{
                 {'5','.','4','6','7','8','9','1','2'},
                 {'6','7','2','1','9','5','3','4','8'},
                 {'1','9','8','3','4','2','5','6','7'},
@@ -46,7 +45,7 @@ public class SolutionTest {
                 {'2','8','7','4','1','9','6','3','5'},
                 {'3','4','5','2','8','6','1','7','9'}
         });
-        SodukoBoard solution = new SodukoBoard(new char[][]{
+        SudokuBoardArrays solution = new SudokuBoardArrays(new char[][]{
                 {'5','3','4','6','7','8','9','1','2'},
                 {'6','7','2','1','9','5','3','4','8'},
                 {'1','9','8','3','4','2','5','6','7'},
@@ -63,7 +62,7 @@ public class SolutionTest {
 
     @Test
     void test03() {
-        SodukoBoard input = new SodukoBoard(new char[][]{
+        SudokuBoardArrays input = new SudokuBoardArrays(new char[][]{
                 {'5','.','4','6','7','.','9','1','2'},
                 {'6','7','2','1','9','5','3','4','8'},
                 {'1','9','8','3','.','2','5','6','7'},
@@ -74,7 +73,7 @@ public class SolutionTest {
                 {'2','8','7','4','1','9','6','3','5'},
                 {'.','.','.','2','8','6','1','7','9'}
         });
-        SodukoBoard solution = new SodukoBoard(new char[][]{
+        SudokuBoardArrays solution = new SudokuBoardArrays(new char[][]{
                 {'5','3','4','6','7','8','9','1','2'},
                 {'6','7','2','1','9','5','3','4','8'},
                 {'1','9','8','3','4','2','5','6','7'},
@@ -91,7 +90,7 @@ public class SolutionTest {
 
     @Test
     void test04() {
-        SodukoBoard input = new SodukoBoard(new char[][]{
+        SudokuBoardArrays input = new SudokuBoardArrays(new char[][]{
                 {'1','.','.','.','.','6','8','3','.'},
                 {'.','8','.','5','7','3','.','9','.'},
                 {'.','.','.','.','2','8','.','.','.'},
@@ -102,7 +101,7 @@ public class SolutionTest {
                 {'7','6','3','.','.','.','.','.','9'},
                 {'9','2','8','7','.','.','5','.','.'},
         });
-        SodukoBoard solution = new SodukoBoard(new char[][]{
+        SudokuBoardArrays solution = new SudokuBoardArrays(new char[][]{
                 {'1','5','7','9','4','6','8','3','2'},
                 {'2','8','4','5','7','3','1','9','6'},
                 {'3','9','6','1','2','8','7','4','5'},
@@ -120,7 +119,7 @@ public class SolutionTest {
 
     @Test
     void test05() {
-        SodukoBoard input = new SodukoBoard(new char[][]{
+        SudokuBoardArrays input = new SudokuBoardArrays(new char[][]{
                 {'.','.','9','7','4','8','.','.','.'},
                 {'7','.','.','.','.','.','.','.','.'},
                 {'.','2','.','1','.','9','.','.','.'},
@@ -131,7 +130,7 @@ public class SolutionTest {
                 {'.','.','.','.','.','.','.','.','6'},
                 {'.','.','.','2','7','5','9','.','.'}
         });
-        SodukoBoard solution = new SodukoBoard(new char[][]{
+        SudokuBoardArrays solution = new SudokuBoardArrays(new char[][]{
                 {'5','1','9','7','4','8','6','3','2'},
                 {'7','8','3','6','5','2','4','1','9'},
                 {'4','2','6','1','3','9','8','7','5'},
@@ -150,7 +149,7 @@ public class SolutionTest {
 
     @Test
     void test06() {
-        SodukoBoard input = new SodukoBoard(new char[][]{
+        SudokuBoardArrays input = new SudokuBoardArrays(new char[][]{
                 {'.','.','3','2','.','6','8','.','.'},
                 {'.','5','1','.','.','.','7','2','.'},
                 {'.','.','.','8','7','.','.','4','5'},
@@ -161,7 +160,7 @@ public class SolutionTest {
                 {'7','.','.','5','.','.','1','.','.'},
                 {'2','1','.','.','.','4','.','.','8'}
         });
-        SodukoBoard solution = new SodukoBoard(new char[][]{
+        SudokuBoardArrays solution = new SudokuBoardArrays(new char[][]{
                 {'4','7','3','2','5','6','8','9','1'},
                 {'8','5','1','3','4','9','7','2','6'},
                 {'9','2','6','8','7','1','3','4','5'},
@@ -181,7 +180,7 @@ public class SolutionTest {
 
     @Test
     void test07() {
-        SodukoBoard input = new SodukoBoard(new char[][]{
+        SudokuBoardArrays input = new SudokuBoardArrays(new char[][]{
                 {'.','2','.','.','5','.','8','.','.'},
                 {'1','.','.','.','.','.','.','9','4'},
                 {'.','.','.','8','1','9','2','.','.'},
@@ -192,7 +191,7 @@ public class SolutionTest {
                 {'.','3','.','.','.','6','5','8','9'},
                 {'9','.','.','.','8','3','.','.','.'}
         });
-        SodukoBoard solution = new SodukoBoard(new char[][]{
+        SudokuBoardArrays solution = new SudokuBoardArrays(new char[][]{
                 {'6','2','9','3','5','4','8','1','7'},
                 {'1','5','8','7','6','2','3','9','4'},
                 {'3','7','4','8','1','9','2','6','5'},
@@ -211,7 +210,7 @@ public class SolutionTest {
 
     @Test
     void test08() {
-        SodukoBoard input = new SodukoBoard(new char[][]{
+        SudokuBoardArrays input = new SudokuBoardArrays(new char[][]{
                 {'.','.','5','.','.','8','.','.','.'},
                 {'.','.','.','.','7','.','.','8','.'},
                 {'.','.','.','3','.','.','4','7','5'},
@@ -222,7 +221,7 @@ public class SolutionTest {
                 {'1','.','.','.','.','6','.','.','9'},
                 {'3','4','.','.','.','2','6','.','.'}
         });
-        SodukoBoard solution = new SodukoBoard(new char[][]{
+        SudokuBoardArrays solution = new SudokuBoardArrays(new char[][]{
                 {'7','3','5','2','4','8','9','1','6'},
                 {'4','6','9','1','7','5','3','8','2'},
                 {'2','8','1','3','6','9','4','7','5'},
@@ -241,7 +240,7 @@ public class SolutionTest {
 
     @Test
     void test09() {
-        SodukoBoard input = new SodukoBoard(new char[][]{
+        SudokuBoardArrays input = new SudokuBoardArrays(new char[][]{
                 {'.','.','.','.','.','1','.','4','.'},
                 {'.','.','1','.','.','9','.','.','6'},
                 {'4','7','.','.','.','.','8','.','.'},
@@ -252,7 +251,7 @@ public class SolutionTest {
                 {'.','.','2','.','.','.','.','.','.'},
                 {'5','.','8','4','.','.','9','.','.'}
         });
-        SodukoBoard solution = new SodukoBoard(new char[][]{
+        SudokuBoardArrays solution = new SudokuBoardArrays(new char[][]{
                 {'9','2','6','8','7','1','3','4','5'},
                 {'8','5','1','3','4','9','7','2','6'},
                 {'4','7','3','2','5','6','8','9','1'},
@@ -271,7 +270,7 @@ public class SolutionTest {
 
     @Test
     void test10() {
-        SodukoBoard input = new SodukoBoard(new char[][]{
+        SudokuBoardArrays input = new SudokuBoardArrays(new char[][]{
                 {'3','.','5','.','.','.','.','7','.'},
                 {'7','.','.','.','.','1','.','.','.'},
                 {'.','.','.','4','.','.','.','.','6'},
@@ -282,7 +281,7 @@ public class SolutionTest {
                 {'.','.','.','.','4','.','.','.','.'},
                 {'.','5','.','1','9','.','.','8','.'}
         });
-        SodukoBoard solution = new SodukoBoard(new char[][]{
+        SudokuBoardArrays solution = new SudokuBoardArrays(new char[][]{
                 {'9','2','6','8','7','1','3','4','5'},
                 {'8','5','1','3','4','9','7','2','6'},
                 {'4','7','3','2','5','6','8','9','1'},
